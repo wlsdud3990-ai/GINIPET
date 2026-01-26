@@ -1,0 +1,88 @@
+/* Login.module.css - Login 전용 스타일 */
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.loginBox {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.loginBox h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.loginBox form p {
+  margin-bottom: 20px;
+}
+
+.loginBox label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+  border-color: #c2111a;
+  outline: none;
+}
+
+.loginBox input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.loginBox button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ED1B24;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.loginBox button:hover {
+  background-color: #c2111a;
+}
+
+.loginBox a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.loginBox a:hover {
+  text-decoration: underline;
+}
+
+.errorMsg {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 10px;
+}

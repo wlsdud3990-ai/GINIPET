@@ -1,0 +1,134 @@
+/* ===============================
+   Join Page (Isolated Style)
+================================ */
+
+.join-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f7fb, #eef1f6);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 카드 컨테이너 */
+.join-container {
+  width: 420px;
+  background: #ffffff;
+  padding: 36px 40px 40px;
+  border-radius: 16px;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* 타이틀 */
+.join-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #1f2937;
+}
+
+/* 폼 */
+.join-form {
+  width: 100%;
+}
+
+/* 각 입력 행 */
+.join-row {
+  margin-bottom: 18px;
+}
+
+/* 라벨 */
+.join-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* input 공통 */
+.join-row input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+/* 포커스 */
+.join-row input:focus {
+  outline: none;
+  border-color:  #4a7cff;
+  box-shadow: 0 0 0 3px rgba(74, 124, 255, 0.18);
+}
+
+/* 아이디 + 버튼 */
+.join-id-box {
+  display: flex;
+  gap: 10px;
+}
+
+/* 중복확인 버튼 */
+.join-id-box button {
+  min-width: 92px;
+  background: #6b7280;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.join-id-box button:hover {
+  background: #4b5563;
+}
+
+.join-id-box button:active {
+  transform: scale(0.97);
+}
+
+/* 메시지 */
+.join-msg {
+  margin: 6px 0 16px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.join-msg.success {
+  color: #15803d;
+}
+
+.join-msg.error {
+  color: #dc2626;
+}
+
+/* 회원가입 버튼 */
+.join-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #ff4a4a, #3b6cff);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.join-submit:hover {
+  box-shadow: 0 8px 18px rgba(74, 124, 255, 0.35);
+}
+
+.join-submit:active {
+  transform: translateY(1px);
+}
