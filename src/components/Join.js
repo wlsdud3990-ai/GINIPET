@@ -45,6 +45,7 @@ function Join() {
       return;
     }
 
+    //주소 변경 
     axios
       .get(`http://localhost:9070/check-username/${form.username}`)
       .then(res => {
@@ -81,6 +82,8 @@ function Join() {
       return;
     }
 
+     // 비밀번호가 일치하면 서버측으로 내용을 전송 
+     //주소만 변경
     axios
       .post('http://localhost:9070/register', form)
       .then(() => {
