@@ -17,7 +17,8 @@ function Login(props) {
     e.preventDefault();
 
      //주소 변경 
-    axios.post('http://localhost:9070/login', form)
+    // axios.post('http://localhost:9070/login', form)
+    axios.post('https://port-0-backend-express-server-mkvwe5rdd1931a0a.sel3.cloudtype.app/login', form)
       .then(res => {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('username', form.username);

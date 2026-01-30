@@ -46,8 +46,9 @@ function Join() {
     }
 
     //주소 변경 
+    // axios .get(`http://localhost:9070/check-username/${form.username}`)
     axios
-      .get(`http://localhost:9070/check-username/${form.username}`)
+      .get(`https://port-0-backend-express-server-mkvwe5rdd1931a0a.sel3.cloudtype.app/check-username/${form.username}`)
       .then(res => {
         if (res.data.exists) {
           setMessage('이미 사용 중인 아이디입니다.');
@@ -85,7 +86,8 @@ function Join() {
      // 비밀번호가 일치하면 서버측으로 내용을 전송 
      //주소만 변경
     axios
-      .post('http://localhost:9070/register', form)
+      //.post('http://localhost:9070/register', form)
+      .post('https://port-0-backend-express-server-mkvwe5rdd1931a0a.sel3.cloudtype.app/register', form)
       .then(() => {
         alert('회원가입이 완료되었습니다.');
         navigate('/login');
